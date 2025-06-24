@@ -60,6 +60,8 @@ class OTAUpdater:
         elif response.status_code == 404:
             print(f'Firmware not found - {self.firmware_url}.')
             return False
+        
+        response = None
 
     def update_no_reset(self):
         """ Update the code without resetting the device."""
@@ -103,6 +105,8 @@ class OTAUpdater:
         response = urequests.get(self.version_url)
         
         data = json.loads(response.text)
+        
+        response = None
         
         print(f"data is: {data}, url is: {self.version_url}")
         print(f"data version is: {data['version']}")

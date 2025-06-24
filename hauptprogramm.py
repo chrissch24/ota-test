@@ -6,9 +6,9 @@ from WIFI_CONFIG import SSID, PASSWORD
 from machine import Pin
 import time
 
-firmware_url = "https://raw.githubusercontent.com/chrissch24/ota-test/main/"
+firmware_url = "https://raw.githubusercontent.com/chrissch24/ota-test/main"
 
-ota_updater = OTAUpdater(SSID, PASSWORD, firmware_url, "main.py")
+ota_updater = OTAUpdater(SSID, PASSWORD, firmware_url, "hauptprogramm.py")
 
 ota_updater.download_and_install_update_if_available()
 

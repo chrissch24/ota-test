@@ -32,6 +32,6 @@ while True:
     time.sleep(2)
     for i in range(10):
         led1.value(1)
-        time.sleep(0.5)
+        time.sleep(0.2)
         led1.value(0)
-        time.sleep(0.5)
+        time.sleep(0.2)

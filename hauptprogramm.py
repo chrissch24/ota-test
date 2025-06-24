@@ -30,8 +30,10 @@ while True:
     led1.value(0)
     led2.value(0)
     time.sleep(2)
-    for i in range(10):
+    for i in range(100):
         led1.value(1)
-        time.sleep(0.2)
+        led2.value(1)
+        time.sleep(0.1)
         led1.value(0)
-        time.sleep(0.2)
+        led2.value(0)
+        time.sleep(0.1)
